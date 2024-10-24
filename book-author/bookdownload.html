@@ -6,45 +6,48 @@
     <title>Book Download</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            margin: 0;
         }
         .container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
+            border: 1px solid #ccc;
+            padding: 40px;
+            border-radius: 10px;
+            width: 400px;
         }
-        h1 {
-            margin-bottom: 20px;
+        .book-cover {
+            width: 400px;
+            height: auto;
         }
-        .download-btn {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
-            color: #fff;
-            background-color: #007bff;
-            border: none;
-            border-radius: 5px;
+        .download-link {
+            display: block;
+            margin-top: 20px;
+            font-size: 18px;
             text-decoration: none;
-            cursor: pointer;
+            color: #000;
+            background-color: #f0f0f0;
+            padding: 10px 20px;
+            border-radius: 5px;
         }
-        .download-btn:hover {
-            background-color: #0056b3;
+        .download-link:hover {
+            background-color: #ccc;
+        }
+        .download-text {
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Download Your Book</h1>
-        <a href="https://drive.google.com/drive/u/1/folders/1UgsEZk7v_avail9d4H8Xfu7D65coZSrs" class="download-btn" download>Download Now</a>
+        <img src="./images/black cover.jpg" alt="Book Cover" class="book-cover">
+        <div class="download-text">Download here</div>
+        <a href="https://drive.google.com/drive/u/1/folders/1UgsEZk7v_avail9d4H8Xfu7D65coZSrs" download class="download-link">Download Book</a>
     </div>
 </body>
 </html>
