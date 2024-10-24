@@ -1,3 +1,86 @@
-<h1>download book from here</h1>
-<p>download book from link below :</p>
-<a href="" download="mybook.pdf"></a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Download Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.book-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.book-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.book-title {
+    margin-top: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+.book-description {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666;
+}
+
+.download-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #2980b9;
+}
+
+</style>
+<body>
+    <div class="container">
+        <div class="book-card">
+            <img src="/images/black cover.jpg" alt="Book Image" class="book-image">
+            <h1 class="book-title">The Great Book</h1>
+            <p class="book-description">An exciting journey into the world of adventure. Download your copy now!</p>
+            <a href="https://github.com/fahmy-webdev/Book-download" download class="download-button">Download Now</a>
+        </div>
+    </div>
+</body>
+</html>
